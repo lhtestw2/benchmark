@@ -15,5 +15,5 @@ def load_deps():
     load("@rules_python//python:pip.bzl", pip3_install="pip_install")
     pip3_install(
         name = "tools_pip_deps",
-        requirements = "//:requirements.txt",
+        requirements = "//tools:requirements.txt",
     )
