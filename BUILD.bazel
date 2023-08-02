@@ -66,7 +66,7 @@ cc_library(
         "//conditions:default": [],
     }),
     deps = select({
-        ":perfcounters": ["@libpfm//:libpfm"],
+        ":perfcounters": ["//tools:libpfm"],
         "//conditions:default": [],
     }),
 )
