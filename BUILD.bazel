@@ -47,7 +47,7 @@ cc_library(
     ],
     linkopts = select({
         ":windows": ["-DEFAULTLIB:shlwapi.lib"],
-        "//conditions:default": ["-pthread"],
+        "//conditions:default": [],
     }),
     copts = select({
         ":windows": [],
